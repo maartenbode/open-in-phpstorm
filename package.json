@@ -2,13 +2,13 @@
   "name": "open-in-phpstorm",
   "displayName": "open-in-phpstorm",
   "description": "Open files easily in PhpStorm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "MaartenBode",
   "repository": {
     "type": "git",
     "url": "https://github.com/maartenbode/open-in-phpstorm"
   },
-  "icon": "logo.png",
+  "icon": "logo-v2.png",
   "engines": {
     "vscode": "^1.70.0"
   },
