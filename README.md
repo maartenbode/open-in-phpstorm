@@ -9,6 +9,20 @@ A VS Code/Cursor extension that allows you to quickly open files and projects in
 - Command palette support
 - Maintains your current workspace organization while leveraging PhpStorm's powerful features
 
+## Screenshots
+
+### Command palette
+
+![](docs/screenshot-command-palette.png)
+
+### Menu
+
+![](docs/screenshot-menu.png)
+
+### Context menu
+
+![](docs/screenshot-context.png)
+
 ## Requirements
 
 - Visual Studio Code or Cursor

@@ -2,7 +2,7 @@
   "name": "open-in-phpstorm",
   "displayName": "open-in-phpstorm",
   "description": "Open files easily in PhpStorm",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "publisher": "MaartenBode",
   "repository": {
     "type": "git",
@@ -21,9 +21,31 @@
     "commands": [
       {
         "command": "open-in-phpstorm.openFile",
-        "title": "Open in PhpStorm"
+        "title": "Open in PhpStorm",
+        "icon": "phpstorm-logo.svg"
       }
-    ]
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "open-in-phpstorm.openFile",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "open-in-phpstorm.openFile",
+          "group": "navigation"
+        }
+      ],
+      "menuBar": [
+        {
+          "command": "open-in-phpstorm.openFile",
+          "when": "editorIsOpen",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
