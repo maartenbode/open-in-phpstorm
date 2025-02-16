@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/maartenbode/open-in-phpstorm"
   },
-  "icon": "icon.png",
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.97.0"
   },
