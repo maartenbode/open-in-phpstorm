@@ -1,8 +1,8 @@
 {
   "name": "open-in-phpstorm",
-  "displayName": "open-in-phpstorm",
+  "displayName": "Open in PhpStorm",
   "description": "Open files easily in PhpStorm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "MaartenBode",
   "repository": {
     "type": "git",
