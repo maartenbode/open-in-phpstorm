@@ -12,7 +12,10 @@ export function activate(context: vscode.ExtensionContext) {
       }
 
       const filePath = editor.document.fileName;
-      const command = `open phpstorm://open?file=${filePath}`;
+      const line = editor.selection.active.line + 1;
+      const position = editor.selection.active.character;
+
+      const command = `open "phpstorm://open?file=${filePath}&line=${line}&column=${position}"`;
 
       exec(command, (error, stdout, stderr) => {
         if (error) {
