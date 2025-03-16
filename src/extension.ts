@@ -12,7 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
       }
 
       const filePath = editor.document.fileName;
-      const command = `phpstorm "${filePath}"`;
+      const command = `open phpstorm://open?file=${filePath}`;
 
       exec(command, (error, stdout, stderr) => {
         if (error) {
