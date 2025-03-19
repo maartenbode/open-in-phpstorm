@@ -46,10 +46,8 @@ There are several ways to open files in your preferred IDE:
 
 The extension is configured to open the following file types in each IDE:
 
-- PhpStorm: `.php`, `.ts`, `.tsx`, `.js`, `.jsx`
 - PyCharm Community Edition: `.py`
-
-You can modify these mappings in the VS Code settings under "IDE Integration".
+- PhpStorm: All other file types
 
 ## Contributing
 
