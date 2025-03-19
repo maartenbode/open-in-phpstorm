@@ -1,7 +1,7 @@
 {
-  "name": "open-in-phpstorm",
-  "displayName": "Open in PhpStorm",
-  "description": "Open files easily in PhpStorm",
+  "name": "open-in-jetbrains-ides",
+  "displayName": "Open in JetBrains IDEs",
+  "description": "Open files easily in PhpStorm and PyCharm Community Edition",
   "version": "0.2.0",
   "publisher": "MaartenBode",
   "repository": {
@@ -23,25 +23,47 @@
         "command": "open-in-phpstorm.openFile",
         "title": "Open in PhpStorm",
         "icon": "phpstorm-logo.svg"
+      },
+      {
+        "command": "open-in-pycharm-ce.openFile",
+        "title": "Open in PyCharm Community Edition",
+        "icon": "pycharm-logo.svg"
       }
     ],
     "menus": {
       "editor/title": [
         {
           "command": "open-in-phpstorm.openFile",
-          "group": "navigation"
+          "group": "navigation",
+          "when": "resourceExtname != .py"
+        },
+        {
+          "command": "open-in-pycharm-ce.openFile",
+          "group": "navigation",
+          "when": "resourceExtname == .py"
         }
       ],
       "editor/context": [
         {
           "command": "open-in-phpstorm.openFile",
-          "group": "navigation"
+          "group": "navigation",
+          "when": "resourceExtname != .py"
+        },
+        {
+          "command": "open-in-pycharm-ce.openFile",
+          "group": "navigation",
+          "when": "resourceExtname == .py"
         }
       ],
       "menuBar": [
         {
           "command": "open-in-phpstorm.openFile",
-          "when": "editorIsOpen",
+          "when": "editorIsOpen && resourceExtname != .py",
+          "group": "navigation"
+        },
+        {
+          "command": "open-in-pycharm-ce.openFile",
+          "when": "editorIsOpen && resourceExtname == .py",
           "group": "navigation"
         }
       ]

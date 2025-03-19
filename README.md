@@ -1,13 +1,14 @@
 # Open in PhpStorm
 
-A VS Code/Cursor extension that allows you to quickly open files and projects in PhpStorm directly from your editor.
+A VS Code/Cursor extension that allows you to quickly open files and projects in PhpStorm and PyCharm Community Edition directly from your editor.
 
 ## Features
 
-- Open files and folders in PhpStorm with a single click
+- Open files and folders in PhpStorm or PyCharm Community Edition with a single click
+- File extension to IDE mapping
 - Context menu integration in VS Code/Cursor's file explorer
 - Command palette support
-- Maintains your current workspace organization while leveraging PhpStorm's powerful features
+- Maintains your current workspace organization while leveraging your preferred IDE's powerful features
 
 ## Screenshots
 
@@ -26,21 +27,29 @@ A VS Code/Cursor extension that allows you to quickly open files and projects in
 ## Requirements
 
 - Visual Studio Code or Cursor
-- PhpStorm installed on your system
+- PhpStorm and/or PyCharm Community Edition installed on your system
 
 ## Installation
 
 1. Install the extension from the VS Code Marketplace
-2. Ensure PhpStorm is installed on your system
-3. (Optional) Configure the extension settings if PhpStorm is installed in a non-standard location
+2. Ensure your preferred IDEs are installed on your system
 
 ## Usage
 
-There are several ways to open files in PhpStorm:
+There are several ways to open files in your preferred IDE:
 
-1. Right-click on a file or folder in the VS Code/Cursor file explorer and select "Open in PhpStorm"
-2. Use the command palette (Cmd/Ctrl + Shift + P) and search for "Open in PhpStorm"
+1. Right-click on a file or folder in the VS Code/Cursor file explorer and select "Open in PhpStorm" or "Open in PyCharm Community Edition"
+2. Use the command palette (Cmd/Ctrl + Shift + P) and search for "Open in PhpStorm" or "Open in PyCharm Community Edition"
 3. Use the keyboard shortcut (configurable in VS Code settings)
+
+## Configuration
+
+The extension is configured to open the following file types in each IDE:
+
+- PhpStorm: `.php`, `.ts`, `.tsx`, `.js`, `.jsx`
+- PyCharm Community Edition: `.py`
+
+You can modify these mappings in the VS Code settings under "IDE Integration".
 
 ## Contributing
 
