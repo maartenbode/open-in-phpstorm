@@ -2,7 +2,7 @@
   "name": "open-in-jetbrains-ides",
   "displayName": "Open in JetBrains IDEs",
   "description": "Open files easily in PhpStorm and PyCharm Community Edition",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "MaartenBode",
   "repository": {
     "type": "git",
